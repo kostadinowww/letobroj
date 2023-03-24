@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="sample_hour">00:00</string>
+	<string name="sample_date">21ви</string>
+	<string name="sample_weekday_week">1/7</string>
+	<string name="sample_month_name">трети</string>
+	<string name="sample_year">7058</string>
+	<string name="sample_sdate">3</string>
+	<string name="sample_sweek_name">4</string>
+	<string name="sample_smonth_name">2</string>
+	<string name="sample_syear">1</string>
+	<string name="sample_era">1</string>
+	<string name="sample_element">земя\nчервено\nюг</string>
+	<string name="sample_gender">мъжки</string>
+	<string name="sample_animal">вол</string>
+
+	<string name="welcome.instr1">Приложението Български лѣтоброй се използва само като widget. Натиснете дълго върху началния екран и изберете Български лѣтоброй от widget gallery.</string>
+	<string name="welcome.instr2">След като добавите widget-а към началния екран, можете да променяте размера му.</string>
+	<string name="welcome.instr3">Български лѣтоброй поддържа няколко размера: широк и тънък, висок и нисък, малък и голям.</string>
+
+	<string name="title">Лѣтоброй</string>
+	<string name="app_name">Български лѣтоброй</string>
+	<string name="close">готово</string>
+
+	<string name="day">Ден</string>
+	<string name="month">Месец</string>
+	<string name="year">Година</string>
+	<string name="sday">Зв. ден</string>
+	<string name="sweek">Зв. седмица</string>
+	<string name="smonth">Зв. месец</string>
+	<string name="syear">Зв. година</string>
+	<string name="era">Ера:</string>
+</resources>

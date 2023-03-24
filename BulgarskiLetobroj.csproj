@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Xamarin.AndroidX.Migration.1.0.8\build\monoandroid90\Xamarin.AndroidX.Migration.props" Condition="Exists('packages\Xamarin.AndroidX.Migration.1.0.8\build\monoandroid90\Xamarin.AndroidX.Migration.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CD50E62E-53BF-4D21-8E05-5BD1CF407D9D}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>BulgarskiLetobroj</RootNamespace>
+    <AssemblyName>BulgarskiLetobroj</AssemblyName>
+    <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
+    <AndroidTlsProvider>
+    </AndroidTlsProvider>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <ProvisioningType>manual</ProvisioningType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <AotAssemblies>false</AotAssemblies>
+    <EnableLLVM>false</EnableLLVM>
+    <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
+    <BundleAssemblies>false</BundleAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidManagedSymbols>true</AndroidManagedSymbols>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <AotAssemblies>false</AotAssemblies>
+    <EnableLLVM>false</EnableLLVM>
+    <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
+    <BundleAssemblies>false</BundleAssemblies>
+    <AndroidPackageFormat>aab</AndroidPackageFormat>
+    <AndroidUseAapt2>true</AndroidUseAapt2>
+    <AndroidCreatePackagePerAbi>false</AndroidCreatePackagePerAbi>
+    <AndroidKeyStore>true</AndroidKeyStore>
+    <AndroidSigningKeyStore>C:\Users\kosta\AppData\Local\Xamarin\Mono for Android\Keystore\letobroj\letobroj.keystore</AndroidSigningKeyStore>
+    <AndroidSigningStorePass>123465</AndroidSigningStorePass>
+    <AndroidSigningKeyPass>123465</AndroidSigningKeyPass>
+    <AndroidSigningKeyAlias>letobroj</AndroidSigningKeyAlias>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
+    <AppExtensionDebugBundleId />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Java.Interop" />
+    <Reference Include="System" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="Xamarin.AndroidX.Annotation, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Xamarin.AndroidX.Annotation.1.2.0.3\lib\monoandroid90\Xamarin.AndroidX.Annotation.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.Annotation.Experimental, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Xamarin.AndroidX.Annotation.Experimental.1.1.0.3\lib\monoandroid90\Xamarin.AndroidX.Annotation.Experimental.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.Arch.Core.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Xamarin.AndroidX.Arch.Core.Common.2.1.0.11\lib\monoandroid90\Xamarin.AndroidX.Arch.Core.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.Arch.Core.Runtime, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Xamarin.AndroidX.Arch.Core.Runtime.2.1.0.11\lib\monoandroid90\Xamarin.AndroidX.Arch.Core.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.Collection, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Xamarin.AndroidX.Collection.1.1.0.10\lib\monoandroid90\Xamarin.AndroidX.Collection.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Xamarin.AndroidX.Core.1.6.0.3\lib\monoandroid90\Xamarin.AndroidX.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.Lifecycle.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Xamarin.AndroidX.Lifecycle.Common.2.3.1.3\lib\monoandroid90\Xamarin.AndroidX.Lifecycle.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.Lifecycle.LiveData, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Xamarin.AndroidX.Lifecycle.LiveData.2.3.1.3\lib\monoandroid90\Xamarin.AndroidX.Lifecycle.LiveData.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.Lifecycle.LiveData.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Xamarin.AndroidX.Lifecycle.LiveData.Core.2.3.1.3\lib\monoandroid90\Xamarin.AndroidX.Lifecycle.LiveData.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.Lifecycle.Runtime, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Xamarin.AndroidX.Lifecycle.Runtime.2.3.1.4\lib\monoandroid90\Xamarin.AndroidX.Lifecycle.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.Lifecycle.Service, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Xamarin.AndroidX.Lifecycle.Service.2.3.1.3\lib\monoandroid90\Xamarin.AndroidX.Lifecycle.Service.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.MultiDex, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Xamarin.AndroidX.MultiDex.2.0.1.5\lib\monoandroid90\Xamarin.AndroidX.MultiDex.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.Room.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Xamarin.AndroidX.Room.Common.2.3.0.4\lib\monoandroid90\Xamarin.AndroidX.Room.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.Room.Runtime, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Xamarin.AndroidX.Room.Runtime.2.3.0.4\lib\monoandroid90\Xamarin.AndroidX.Room.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.Sqlite, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Xamarin.AndroidX.Sqlite.2.1.0.10\lib\monoandroid90\Xamarin.AndroidX.Sqlite.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.Sqlite.Framework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Xamarin.AndroidX.Sqlite.Framework.2.1.0.10\lib\monoandroid90\Xamarin.AndroidX.Sqlite.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.Startup.StartupRuntime, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Xamarin.AndroidX.Startup.StartupRuntime.1.1.0.2\lib\monoandroid90\Xamarin.AndroidX.Startup.StartupRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.Tracing.Tracing, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Xamarin.AndroidX.Tracing.Tracing.1.0.0.3\lib\monoandroid90\Xamarin.AndroidX.Tracing.Tracing.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.VersionedParcelable, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Xamarin.AndroidX.VersionedParcelable.1.1.1.10\lib\monoandroid90\Xamarin.AndroidX.VersionedParcelable.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.Work.Runtime, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Xamarin.AndroidX.Work.Runtime.2.7.0\lib\monoandroid90\Xamarin.AndroidX.Work.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Google.Guava.ListenableFuture, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Xamarin.Google.Guava.ListenableFuture.1.0.0.4\lib\monoandroid90\Xamarin.Google.Guava.ListenableFuture.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Letobroj\LetobrojPeriodi.cs" />
+    <Compile Include="Letobroj\Letobroj.cs" />
+    <Compile Include="Letobroj\LetobrojFactory.cs" />
+    <Compile Include="Letobroj\Period.cs" />
+    <Compile Include="Letobroj\Periods.cs" />
+    <Compile Include="Letobroj\SpecificDay.cs" />
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AppWidget.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\roundcorners.xml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\font\montserratsemibold.ttf">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\font\montserratvariablefontwght.ttf">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\values\strings.xml" />
+    <AndroidResource Include="Resources\xml\appwidgetprovider.xml" />
+    <AndroidResource Include="Resources\drawable\previewImage.png" />
+    <AndroidResource Include="Resources\drawable\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Widget_2_2.axml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Widget_2_1.axml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Widget_1_1.axml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Widget_1_2.axml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\colors.xml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\font\mssb.xml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\font\mst.xml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ss1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ss2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ss3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ss4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ss5.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <Import Project="packages\Xamarin.AndroidX.Annotation.Experimental.1.1.0.3\build\monoandroid90\Xamarin.AndroidX.Annotation.Experimental.targets" Condition="Exists('packages\Xamarin.AndroidX.Annotation.Experimental.1.1.0.3\build\monoandroid90\Xamarin.AndroidX.Annotation.Experimental.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Xamarin.AndroidX.Annotation.Experimental.1.1.0.3\build\monoandroid90\Xamarin.AndroidX.Annotation.Experimental.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Xamarin.AndroidX.Annotation.Experimental.1.1.0.3\build\monoandroid90\Xamarin.AndroidX.Annotation.Experimental.targets'))" />
+    <Error Condition="!Exists('packages\Xamarin.AndroidX.MultiDex.2.0.1.5\build\monoandroid90\Xamarin.AndroidX.MultiDex.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Xamarin.AndroidX.MultiDex.2.0.1.5\build\monoandroid90\Xamarin.AndroidX.MultiDex.targets'))" />
+    <Error Condition="!Exists('packages\Xamarin.AndroidX.Migration.1.0.8\build\monoandroid90\Xamarin.AndroidX.Migration.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Xamarin.AndroidX.Migration.1.0.8\build\monoandroid90\Xamarin.AndroidX.Migration.props'))" />
+    <Error Condition="!Exists('packages\Xamarin.AndroidX.Migration.1.0.8\build\monoandroid90\Xamarin.AndroidX.Migration.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Xamarin.AndroidX.Migration.1.0.8\build\monoandroid90\Xamarin.AndroidX.Migration.targets'))" />
+    <Error Condition="!Exists('packages\Xamarin.AndroidX.Annotation.1.2.0.3\build\monoandroid90\Xamarin.AndroidX.Annotation.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Xamarin.AndroidX.Annotation.1.2.0.3\build\monoandroid90\Xamarin.AndroidX.Annotation.targets'))" />
+    <Error Condition="!Exists('packages\Xamarin.AndroidX.Arch.Core.Common.2.1.0.11\build\monoandroid90\Xamarin.AndroidX.Arch.Core.Common.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Xamarin.AndroidX.Arch.Core.Common.2.1.0.11\build\monoandroid90\Xamarin.AndroidX.Arch.Core.Common.targets'))" />
+    <Error Condition="!Exists('packages\Xamarin.AndroidX.Arch.Core.Runtime.2.1.0.11\build\monoandroid90\Xamarin.AndroidX.Arch.Core.Runtime.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Xamarin.AndroidX.Arch.Core.Runtime.2.1.0.11\build\monoandroid90\Xamarin.AndroidX.Arch.Core.Runtime.targets'))" />
+    <Error Condition="!Exists('packages\Xamarin.AndroidX.Collection.1.1.0.10\build\monoandroid90\Xamarin.AndroidX.Collection.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Xamarin.AndroidX.Collection.1.1.0.10\build\monoandroid90\Xamarin.AndroidX.Collection.targets'))" />
+    <Error Condition="!Exists('packages\Xamarin.AndroidX.Lifecycle.Common.2.3.1.3\build\monoandroid90\Xamarin.AndroidX.Lifecycle.Common.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Xamarin.AndroidX.Lifecycle.Common.2.3.1.3\build\monoandroid90\Xamarin.AndroidX.Lifecycle.Common.targets'))" />
+    <Error Condition="!Exists('packages\Xamarin.AndroidX.Lifecycle.LiveData.Core.2.3.1.3\build\monoandroid90\Xamarin.AndroidX.Lifecycle.LiveData.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Xamarin.AndroidX.Lifecycle.LiveData.Core.2.3.1.3\build\monoandroid90\Xamarin.AndroidX.Lifecycle.LiveData.Core.targets'))" />
+    <Error Condition="!Exists('packages\Xamarin.AndroidX.Lifecycle.LiveData.2.3.1.3\build\monoandroid90\Xamarin.AndroidX.Lifecycle.LiveData.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Xamarin.AndroidX.Lifecycle.LiveData.2.3.1.3\build\monoandroid90\Xamarin.AndroidX.Lifecycle.LiveData.targets'))" />
+    <Error Condition="!Exists('packages\Xamarin.AndroidX.Lifecycle.Runtime.2.3.1.4\build\monoandroid90\Xamarin.AndroidX.Lifecycle.Runtime.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Xamarin.AndroidX.Lifecycle.Runtime.2.3.1.4\build\monoandroid90\Xamarin.AndroidX.Lifecycle.Runtime.targets'))" />
+    <Error Condition="!Exists('packages\Xamarin.AndroidX.Lifecycle.Service.2.3.1.3\build\monoandroid90\Xamarin.AndroidX.Lifecycle.Service.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Xamarin.AndroidX.Lifecycle.Service.2.3.1.3\build\monoandroid90\Xamarin.AndroidX.Lifecycle.Service.targets'))" />
+    <Error Condition="!Exists('packages\Xamarin.AndroidX.Room.Common.2.3.0.4\build\monoandroid90\Xamarin.AndroidX.Room.Common.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Xamarin.AndroidX.Room.Common.2.3.0.4\build\monoandroid90\Xamarin.AndroidX.Room.Common.targets'))" />
+    <Error Condition="!Exists('packages\Xamarin.AndroidX.Sqlite.2.1.0.10\build\monoandroid90\Xamarin.AndroidX.Sqlite.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Xamarin.AndroidX.Sqlite.2.1.0.10\build\monoandroid90\Xamarin.AndroidX.Sqlite.targets'))" />
+    <Error Condition="!Exists('packages\Xamarin.AndroidX.Sqlite.Framework.2.1.0.10\build\monoandroid90\Xamarin.AndroidX.Sqlite.Framework.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Xamarin.AndroidX.Sqlite.Framework.2.1.0.10\build\monoandroid90\Xamarin.AndroidX.Sqlite.Framework.targets'))" />
+    <Error Condition="!Exists('packages\Xamarin.AndroidX.Room.Runtime.2.3.0.4\build\monoandroid90\Xamarin.AndroidX.Room.Runtime.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Xamarin.AndroidX.Room.Runtime.2.3.0.4\build\monoandroid90\Xamarin.AndroidX.Room.Runtime.targets'))" />
+    <Error Condition="!Exists('packages\Xamarin.AndroidX.Tracing.Tracing.1.0.0.3\build\monoandroid90\Xamarin.AndroidX.Tracing.Tracing.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Xamarin.AndroidX.Tracing.Tracing.1.0.0.3\build\monoandroid90\Xamarin.AndroidX.Tracing.Tracing.targets'))" />
+    <Error Condition="!Exists('packages\Xamarin.AndroidX.Startup.StartupRuntime.1.1.0.2\build\monoandroid90\Xamarin.AndroidX.Startup.StartupRuntime.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Xamarin.AndroidX.Startup.StartupRuntime.1.1.0.2\build\monoandroid90\Xamarin.AndroidX.Startup.StartupRuntime.targets'))" />
+    <Error Condition="!Exists('packages\Xamarin.AndroidX.VersionedParcelable.1.1.1.10\build\monoandroid90\Xamarin.AndroidX.VersionedParcelable.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Xamarin.AndroidX.VersionedParcelable.1.1.1.10\build\monoandroid90\Xamarin.AndroidX.VersionedParcelable.targets'))" />
+    <Error Condition="!Exists('packages\Xamarin.AndroidX.Core.1.6.0.3\build\monoandroid90\Xamarin.AndroidX.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Xamarin.AndroidX.Core.1.6.0.3\build\monoandroid90\Xamarin.AndroidX.Core.targets'))" />
+    <Error Condition="!Exists('packages\Xamarin.Google.Guava.ListenableFuture.1.0.0.4\build\monoandroid90\Xamarin.Google.Guava.ListenableFuture.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Xamarin.Google.Guava.ListenableFuture.1.0.0.4\build\monoandroid90\Xamarin.Google.Guava.ListenableFuture.targets'))" />
+    <Error Condition="!Exists('packages\Xamarin.AndroidX.Work.Runtime.2.7.0\build\monoandroid90\Xamarin.AndroidX.Work.Runtime.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Xamarin.AndroidX.Work.Runtime.2.7.0\build\monoandroid90\Xamarin.AndroidX.Work.Runtime.targets'))" />
+  </Target>
+  <Import Project="packages\Xamarin.AndroidX.MultiDex.2.0.1.5\build\monoandroid90\Xamarin.AndroidX.MultiDex.targets" Condition="Exists('packages\Xamarin.AndroidX.MultiDex.2.0.1.5\build\monoandroid90\Xamarin.AndroidX.MultiDex.targets')" />
+  <Import Project="packages\Xamarin.AndroidX.Migration.1.0.8\build\monoandroid90\Xamarin.AndroidX.Migration.targets" Condition="Exists('packages\Xamarin.AndroidX.Migration.1.0.8\build\monoandroid90\Xamarin.AndroidX.Migration.targets')" />
+  <Import Project="packages\Xamarin.AndroidX.Annotation.1.2.0.3\build\monoandroid90\Xamarin.AndroidX.Annotation.targets" Condition="Exists('packages\Xamarin.AndroidX.Annotation.1.2.0.3\build\monoandroid90\Xamarin.AndroidX.Annotation.targets')" />
+  <Import Project="packages\Xamarin.AndroidX.Arch.Core.Common.2.1.0.11\build\monoandroid90\Xamarin.AndroidX.Arch.Core.Common.targets" Condition="Exists('packages\Xamarin.AndroidX.Arch.Core.Common.2.1.0.11\build\monoandroid90\Xamarin.AndroidX.Arch.Core.Common.targets')" />
+  <Import Project="packages\Xamarin.AndroidX.Arch.Core.Runtime.2.1.0.11\build\monoandroid90\Xamarin.AndroidX.Arch.Core.Runtime.targets" Condition="Exists('packages\Xamarin.AndroidX.Arch.Core.Runtime.2.1.0.11\build\monoandroid90\Xamarin.AndroidX.Arch.Core.Runtime.targets')" />
+  <Import Project="packages\Xamarin.AndroidX.Collection.1.1.0.10\build\monoandroid90\Xamarin.AndroidX.Collection.targets" Condition="Exists('packages\Xamarin.AndroidX.Collection.1.1.0.10\build\monoandroid90\Xamarin.AndroidX.Collection.targets')" />
+  <Import Project="packages\Xamarin.AndroidX.Lifecycle.Common.2.3.1.3\build\monoandroid90\Xamarin.AndroidX.Lifecycle.Common.targets" Condition="Exists('packages\Xamarin.AndroidX.Lifecycle.Common.2.3.1.3\build\monoandroid90\Xamarin.AndroidX.Lifecycle.Common.targets')" />
+  <Import Project="packages\Xamarin.AndroidX.Lifecycle.LiveData.Core.2.3.1.3\build\monoandroid90\Xamarin.AndroidX.Lifecycle.LiveData.Core.targets" Condition="Exists('packages\Xamarin.AndroidX.Lifecycle.LiveData.Core.2.3.1.3\build\monoandroid90\Xamarin.AndroidX.Lifecycle.LiveData.Core.targets')" />
+  <Import Project="packages\Xamarin.AndroidX.Lifecycle.LiveData.2.3.1.3\build\monoandroid90\Xamarin.AndroidX.Lifecycle.LiveData.targets" Condition="Exists('packages\Xamarin.AndroidX.Lifecycle.LiveData.2.3.1.3\build\monoandroid90\Xamarin.AndroidX.Lifecycle.LiveData.targets')" />
+  <Import Project="packages\Xamarin.AndroidX.Lifecycle.Runtime.2.3.1.4\build\monoandroid90\Xamarin.AndroidX.Lifecycle.Runtime.targets" Condition="Exists('packages\Xamarin.AndroidX.Lifecycle.Runtime.2.3.1.4\build\monoandroid90\Xamarin.AndroidX.Lifecycle.Runtime.targets')" />
+  <Import Project="packages\Xamarin.AndroidX.Lifecycle.Service.2.3.1.3\build\monoandroid90\Xamarin.AndroidX.Lifecycle.Service.targets" Condition="Exists('packages\Xamarin.AndroidX.Lifecycle.Service.2.3.1.3\build\monoandroid90\Xamarin.AndroidX.Lifecycle.Service.targets')" />
+  <Import Project="packages\Xamarin.AndroidX.Room.Common.2.3.0.4\build\monoandroid90\Xamarin.AndroidX.Room.Common.targets" Condition="Exists('packages\Xamarin.AndroidX.Room.Common.2.3.0.4\build\monoandroid90\Xamarin.AndroidX.Room.Common.targets')" />
+  <Import Project="packages\Xamarin.AndroidX.Sqlite.2.1.0.10\build\monoandroid90\Xamarin.AndroidX.Sqlite.targets" Condition="Exists('packages\Xamarin.AndroidX.Sqlite.2.1.0.10\build\monoandroid90\Xamarin.AndroidX.Sqlite.targets')" />
+  <Import Project="packages\Xamarin.AndroidX.Sqlite.Framework.2.1.0.10\build\monoandroid90\Xamarin.AndroidX.Sqlite.Framework.targets" Condition="Exists('packages\Xamarin.AndroidX.Sqlite.Framework.2.1.0.10\build\monoandroid90\Xamarin.AndroidX.Sqlite.Framework.targets')" />
+  <Import Project="packages\Xamarin.AndroidX.Room.Runtime.2.3.0.4\build\monoandroid90\Xamarin.AndroidX.Room.Runtime.targets" Condition="Exists('packages\Xamarin.AndroidX.Room.Runtime.2.3.0.4\build\monoandroid90\Xamarin.AndroidX.Room.Runtime.targets')" />
+  <Import Project="packages\Xamarin.AndroidX.Tracing.Tracing.1.0.0.3\build\monoandroid90\Xamarin.AndroidX.Tracing.Tracing.targets" Condition="Exists('packages\Xamarin.AndroidX.Tracing.Tracing.1.0.0.3\build\monoandroid90\Xamarin.AndroidX.Tracing.Tracing.targets')" />
+  <Import Project="packages\Xamarin.AndroidX.Startup.StartupRuntime.1.1.0.2\build\monoandroid90\Xamarin.AndroidX.Startup.StartupRuntime.targets" Condition="Exists('packages\Xamarin.AndroidX.Startup.StartupRuntime.1.1.0.2\build\monoandroid90\Xamarin.AndroidX.Startup.StartupRuntime.targets')" />
+  <Import Project="packages\Xamarin.AndroidX.VersionedParcelable.1.1.1.10\build\monoandroid90\Xamarin.AndroidX.VersionedParcelable.targets" Condition="Exists('packages\Xamarin.AndroidX.VersionedParcelable.1.1.1.10\build\monoandroid90\Xamarin.AndroidX.VersionedParcelable.targets')" />
+  <Import Project="packages\Xamarin.AndroidX.Core.1.6.0.3\build\monoandroid90\Xamarin.AndroidX.Core.targets" Condition="Exists('packages\Xamarin.AndroidX.Core.1.6.0.3\build\monoandroid90\Xamarin.AndroidX.Core.targets')" />
+  <Import Project="packages\Xamarin.Google.Guava.ListenableFuture.1.0.0.4\build\monoandroid90\Xamarin.Google.Guava.ListenableFuture.targets" Condition="Exists('packages\Xamarin.Google.Guava.ListenableFuture.1.0.0.4\build\monoandroid90\Xamarin.Google.Guava.ListenableFuture.targets')" />
+  <Import Project="packages\Xamarin.AndroidX.Work.Runtime.2.7.0\build\monoandroid90\Xamarin.AndroidX.Work.Runtime.targets" Condition="Exists('packages\Xamarin.AndroidX.Work.Runtime.2.7.0\build\monoandroid90\Xamarin.AndroidX.Work.Runtime.targets')" />
+</Project>
